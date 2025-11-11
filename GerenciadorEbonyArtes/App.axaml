@@ -1,0 +1,57 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="GerenciadorEbonyArtes.App"
+             RequestedThemeVariant="Dark">
+
+  <Application.Styles>
+    
+    <FluentTheme />
+
+    <!-- ===== CUSTOM STYLE LOGIN DARK/NEON ===== -->
+    <Style Selector="TextBox">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="#00FF88" />
+      <Setter Property="BorderBrush" Value="#00FF88" />
+      <!-- apenas borda inferior por padrão -->
+      <Setter Property="BorderThickness" Value="0,0,0,2" />
+      <Setter Property="CornerRadius" Value="0" />
+      <Setter Property="Padding" Value="6,8" />
+      <Setter Property="FontSize" Value="16" />
+      <!-- centraliza o conteúdo (e o Watermark) -->
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+    </Style>
+
+    <!-- Quando TextBox recebe foco: borda completa e cantos arredondados -->
+    <Style Selector="TextBox:focus">
+      <Setter Property="BorderThickness" Value="2" />
+      <Setter Property="CornerRadius" Value="6" />
+      <Setter Property="Background" Value="#0b0b0b" />
+    </Style>
+
+    <!-- ===== BOTÃO NEON ===== -->
+    <Style Selector="Button">
+      <Setter Property="Background" Value="#00FF88" />
+      <Setter Property="Foreground" Value="Black" />
+      <Setter Property="FontSize" Value="16" />
+      <Setter Property="CornerRadius" Value="8" />
+      <Setter Property="Padding" Value="8,6" />
+      <Setter Property="Opacity" Value="1" />
+      <Setter Property="Transitions">
+        <Transitions>
+          <DoubleTransition Property="Opacity" Duration="0:0:0.18" />
+        </Transitions>
+      </Setter>
+    </Style>
+
+    <!-- Efeito neon ao passar o mouse: glow (DropShadow) e leve alteração de opacidade -->
+    <Style Selector="Button:pointerover">
+      <Setter Property="Opacity" Value="0.95" />
+      <Setter Property="Effect">
+        <Setter.Value>
+          <DropShadowEffect Color="#00FF88" BlurRadius="20" />
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+  </Application.Styles>
+</Application>

@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="GerenciadorEbonyArtes.MainWindow"
+        Width="520" Height="620"
+        Title="Teste Janela">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="0" 
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" 
+                    Width="300" 
+                    Spacing="18">
+
+            <!-- Espaço para logo -->
+            <Image Source="avares://GerenciadorEbonyArtes/Assets/logo.png"
+                   Width="120"
+                   Height="120"
+                   HorizontalAlignment="Center"/>
+
+            <!-- Usuário -->
+            <TextBox Watermark="Usuário"
+                     Background="#111"
+                     Foreground="#00FF88"
+                     BorderBrush="#00FF88"
+                     CornerRadius="6"
+                     Height="38"/>
+
+            <!-- Senha -->
+            <TextBox Watermark="Senha"
+                     PasswordChar="•"
+                     Background="#111"
+                     Foreground="#00FF88"
+                     BorderBrush="#00FF88"
+                     CornerRadius="6"
+                     Height="38"/>
+
+            <!-- Botão -->
+            <Button Content="Entrar"
+                    Background="#00FF88"
+                    Foreground="Black"
+                    Height="40"
+                    CornerRadius="6"
+                    HorizontalAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>
