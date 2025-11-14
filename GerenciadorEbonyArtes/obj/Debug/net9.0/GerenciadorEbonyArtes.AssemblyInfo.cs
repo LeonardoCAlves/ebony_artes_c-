@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorEbonyArtes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+143879f03d3c875302b32fbb71325af911c39789")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fba23652310285474a3458b4555e5ed73a90afd")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorEbonyArtes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorEbonyArtes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

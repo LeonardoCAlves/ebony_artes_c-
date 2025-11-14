@@ -70,6 +70,14 @@
             "Avalonia.Themes.Fluent": {
               "target": "Package",
               "version": "[11.3.8, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

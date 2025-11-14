@@ -28,7 +28,8 @@
                    RenderOptions.BitmapInterpolationMode="HighQuality" />
 
             <!-- Usuário -->
-            <TextBox Watermark="Usuário"
+            <TextBox x:Name="TxtUsuario" 
+                     Watermark="Usuário"
                      Background="#111"
                      Foreground="#00FF88"
                      BorderBrush="#00FF88"
@@ -36,7 +37,8 @@
                      Height="38"/>
 
             <!-- Senha -->
-            <TextBox Watermark="Senha"
+            <TextBox x:Name="TxtSenha"
+                     Watermark="Senha"
                      PasswordChar="•"
                      Background="#111"
                      Foreground="#00FF88"
@@ -50,7 +52,9 @@
                     Foreground="Black"
                     Height="30"
                     CornerRadius="6"
-                    HorizontalAlignment="Center" />
+                    HorizontalAlignment="Center" 
+                    Click="OnLoginClick" />
+                    
         </StackPanel>
     </Grid>
 </Window>
